@@ -7,6 +7,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Manage Student Information</h1>
+
+        <div id="student.info">
+            <p><strong>Name:</strong><span id="student-name">Not Available</span></p>
+            <p><strong>Age:</strong><span id="student-age">Not Available</span></p>
+            <p><strong>Subjects:</strong><span id="student-subjects">Not Available</span></p>
+        </div>
+        <h2>Update Student Information</h2>
+        <form id="update-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" palceholder="Enter name"><br>
+
+            <label for="age">Age:</label>
+            <input type="text" id="age"  placeholder="Enter age"><br>
+
+            <label for="subjects">Subjects</label>
+            <input type="text" id="subjects" placeholder="Enter subjects"><br>
+
+            <button type="submit">Update Student</button>
+
+        </form>
+
+            <button id="remove-button">Remove Student Information</button>
+        
+    </div>
+    
+    <script src="script.js"></script>
     
 </body>
 </html>
