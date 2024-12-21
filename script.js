@@ -22,15 +22,18 @@ displayStudentInfo();
 
 document.getElementById('update-form').addEventListener('submit', function (event) {
     event.preventDefault();
+    //console.log("Update button clicked");
 
     const name = document.getElementById('name').value.trim();
-    const age = document.getElementById('age').value.trim();
-    const subjects = document.getElementById('subjects').value.trim.split(',');
+    const age = parseInt(document.getElementById('age').value.trim());
+    const subjects = document.getElementById('subjects').value.trim().split(',');
+
+    //console.log("Name:", name, "Age:",age, "Subjects:", subjects);
 
 
 //update the student object with new values
 student.name = name || student.name;
-student.age = name || student.age;
+student.age = age || student.age;
 student.subjects = subjects[0] ? subjects : student.subjects;
 
 
